@@ -65,8 +65,8 @@ public class JuneExam {
 		for (int attackNum = 1; attackNum <= numAttacks; attackNum++) {
 			int numGenerated = (int) (Math.random() * 5) + 1;
 
-			int attackDamage = getAttackDamage(numGenerated, bossMaxHealth);
-			String attackName = getAttackTypeString(numGenerated);
+			int attackDamage = getSingleAttackDamage(numGenerated, bossMaxHealth);
+			String attackName = getAttackTypeAsString(numGenerated);
 
 			System.out.println("ATTACK: " + attackNum + "\tATTACK TYPE: " + attackName + "\tATTACK DAMAGE: " + attackDamage);
 
@@ -78,7 +78,7 @@ public class JuneExam {
 		return totalDamage;
 	}
 
-	public static int getAttackDamage(int attackType, int bossMaxHealth) {
+	public static int getSingleAttackDamage(int attackType, int bossMaxHealth) {
 		int attackDamage = 0;
 		if (attackType > 1 && attackType <= 4) {
 			attackDamage = 15 * attackType;
@@ -89,7 +89,7 @@ public class JuneExam {
 		return attackDamage;
 	}
 
-	public static String getAttackTypeString(int attackType) {
+	public static String getAttackTypeAsString(int attackType) {
 		switch (attackType) {
 			case 1:
 				return "MISS";
