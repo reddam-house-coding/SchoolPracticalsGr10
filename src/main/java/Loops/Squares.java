@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Term3Prac;
+package Loops;
 
 import javax.swing.JOptionPane;
 
@@ -11,15 +11,13 @@ import javax.swing.JOptionPane;
  *
  * @author Cliftonb
  */
-public class Question2 {
+public class Squares {
 
 	public static void main(String[] args) {
-		int num = Integer.parseInt(JOptionPane.showInputDialog("Enter secret number"));
+		String name = JOptionPane.showInputDialog("Enter name");
 
-		if (num % 2 == 0 && num % 7 == 0) {
-			System.out.println("You can enter!");
-		} else {
-			System.out.println("You may not enter!");
+		for (int i = 0; i <= name.length(); i++) {
+			System.out.println(name.charAt(i));
 		}
 	}
 }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package NovemberExam;
+package Assessments.Y2021.NovemberExam;
 
 import javax.swing.JOptionPane;
 
