@@ -11,45 +11,52 @@ package Methods;
  */
 public class MethodRevision {
 
-	public static void main(String[] args) {
-		String name = "Clifton";
-		sayHello();
-		sayMyName(name);
+    public static void main(String[] args) 
+    {
+        String name = "Clifton";
+        sayHello();
+        sayMyName(name);
 
-		String newName = giveMeAName();
-	}
+        String newName = giveMeAName();
+    }
 
-	public static void sayHello() {
-		System.out.println("Hello");
-	}
+    public static void sayHello() 
+    {
+        System.out.println("Hello");
+    }
 
-	public static void sayMyName(String name) {
-		int a = 5;
-		int b = 8;
-		int num = add(a, b);
-		System.out.println("Hello " + name + " " + num);
-		System.out.println("VALUE: " + a);
-	}
+    public static void sayMyName(String name) 
+    {
+        int a = 5;
+        int b = 8;
+        int num = add(a, b);
+        System.out.println("Hello " + name + " " + num);
+        System.out.println("VALUE: " + a);
+    }
 
-	public static String giveMeAName() {
-		String name = "John";
-		return name;
-	}
+    public static String giveMeAName() 
+    {
+        String name = "John";
+        return name;
+    }
 
-	public static int add(int num1, int num2) {
-		num1++;
-		return num1 + num2;
-	}
+    public static int add(int num1, int num2) 
+    {
+        num1++;
+        return num1 + num2;
+    }
 
-	public static double calculation(int num1, boolean square) {
-		double output = 0;
-		if (square) {
-			output = Math.sqrt(num1);
-		} else {
-			output = Math.pow(num1, 3);
-		}
+    public static double calculation(int num1, boolean square) 
+    {
+        double output = 0;
+        if (square) 
+        {
+            output = Math.sqrt(num1);
+        } else 
+        {
+            output = Math.pow(num1, 3);
+        }
 
-		return output;
-
-	}
+        return output;
+    }
 }
