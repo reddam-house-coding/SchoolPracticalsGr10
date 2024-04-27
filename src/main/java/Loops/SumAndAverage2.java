@@ -15,21 +15,24 @@ public class SumAndAverage2 {
 
 	public static void main(String[] args) {
 
-		int sum = 0;
-		int highest = 0;
-		for (int i = 0; i < 5; i++) {
+		int num = Integer.parseInt(JOptionPane.showInputDialog("How many test?"));
+                int sum = 0;
+                
+		for (int i = 0; i < num; i++) {
 
-			int num = Integer.parseInt(JOptionPane.showInputDialog("Enter a number"));
-			sum += num;
-
-			if (num > highest) {
-				highest = num;
-			}
+			int testMark = Integer.parseInt(JOptionPane.showInputDialog("Enter a number"));
+			sum += testMark;
 
 		}
 
-		System.out.println("Total:" + sum);
-		System.out.println("Avg:" + sum / 5);
-		System.out.println("Highest:" + highest);
+		System.out.println("Avg:" + sum / num);
+                
+                
+                double sum2 = 0;
+                for(int i = 5; i <= 25; i+=5){
+                    double area = Math.PI * 0.5 * Math.pow(i,2);
+                    sum2 += area;
+                }
+                System.out.println("Area: " + sum21 );
 	}
 }
