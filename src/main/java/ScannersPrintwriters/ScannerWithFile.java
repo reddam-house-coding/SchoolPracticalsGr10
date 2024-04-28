@@ -25,7 +25,6 @@ public class ScannerWithFile {
 
 			while (fileSc.hasNextLine()) {
 				String line = fileSc.nextLine();
-
 				Scanner lineSc = new Scanner(line).useDelimiter("#");
 
 				String currentUsername = lineSc.next();

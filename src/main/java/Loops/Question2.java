@@ -11,25 +11,26 @@ import javax.swing.JOptionPane;
  *
  * @author Cliftonb
  */
-public class SumAndAverage2 {
+public class Question2 {
 
 	public static void main(String[] args) {
 
-		int sum = 0;
-		int highest = 0;
+                int sum = 0;
+                int highest = 0;
+                
 		for (int i = 0; i < 5; i++) {
 
 			int num = Integer.parseInt(JOptionPane.showInputDialog("Enter a number"));
 			sum += num;
-
-			if (num > highest) {
-				highest = num;
-			}
+                        
+                        if(num>highest){
+                            highest = num;
+                        }
 
 		}
 
-		System.out.println("Total:" + sum);
-		System.out.println("Avg:" + sum / 5);
-		System.out.println("Highest:" + highest);
+		System.out.println("Avg:" + sum / 10.0);
+                System.out.println("High: " + highest);
+                
 	}
 }
